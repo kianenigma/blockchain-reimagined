@@ -1,0 +1,1 @@
+Properties of a [[Resilience| resilient]] [[Trust|trust]] applied to the Web.  
