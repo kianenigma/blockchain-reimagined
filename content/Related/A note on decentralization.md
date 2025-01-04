@@ -1,8 +1,5 @@
 ---
-created: 2022-10-19 22:52:33.506000+00:00
-dg-hide: true
-dg-publish: true
-updated: 2022-10-24 11:16:44.315000+00:00
+draft: "true"
 ---
 
 A random train of thought that unexpectedly lead to something about blockchain and Web3. 

@@ -31,3 +31,8 @@ Let's recap what we have learned thus far about what blockchain networks are, an
 	- Large file storage in blockchains is hard
 - This is already a good formulation of why money and finance is a great example
 - [[Oracle Problem]], the inability for blockchains to read information from the real world
+
+## Frontier Issues
+[[On and Off Ramp]]
+[[Oracle Problem]]
+[[The Free Internet]]

@@ -1,8 +1,3 @@
----
-dg-publish: true
-dg-permalink: blockchain-reimagined/glossary/trust
-dg-hide: true
----
 
 The property of us believing an [[Authority]] behaves according to some rules. 
 

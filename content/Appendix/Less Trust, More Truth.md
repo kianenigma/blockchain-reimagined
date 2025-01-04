@@ -1,7 +1,3 @@
----
-dg-hide: true
-dg-publish: true
----
 This phrase is one of the known mottos of the Web3 space, often used by Web3 Foundation, Polkadot, and its founder Gavin Wood. It is important to add more context to this statement: Trust is not inherently bad. 
 
 *Human-based trust* might be deemed bad, but trusting a verifiable system through irrefutable rules of science, or battle-tested game theoretic reasons is not necessarily bad. 

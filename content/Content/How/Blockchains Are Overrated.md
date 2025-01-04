@@ -1,7 +1,3 @@
----
-dg-hide: true
-dg-publish: true
----
 We begin our description of *how* blockchains work with this cheeky title, as it conveys a very important message: What we have discussed so far, most notably in [[Blockchain-Reimagined/Content/What/Index|"What"]] elaborated on Blockchains as [[Resilience]] [[State Machine]], 3 of the most important properties of which are: 
 1. Verifiable execution and audit-ability of history
 2. Correct ordering

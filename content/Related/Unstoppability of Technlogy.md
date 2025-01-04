@@ -1,6 +1,5 @@
 ---
-dg-hide: true
-dg-publish: true
+draft: "true"
 ---
 
 Why does China not OPT OUT of internet? too good economically.

@@ -1,7 +1,3 @@
----
-dg-hide: true
-dg-publish: true
----
 [[What Is This All About?]] briefly touched upon the nature of [[Trust]] and [[Authority]]. We described how Bitcoin is creates a trustworthy digital bank, and briefly touched upon Ethereum, creating a global trustworthy digital computer that can perform general computations. Yet, we closed the chapter by acknowledging that there are limitations to this model.
 
 In this chapter, we will build a model around what those limitations are.

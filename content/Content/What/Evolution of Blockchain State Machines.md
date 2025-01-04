@@ -1,7 +1,3 @@
----
-next: "[[Blockchain Networks]]"
-previous: "[[Execution, Ordering, History and State Machines]]"
----
 In [[Execution, Ordering, History and State Machines]] we modeled a blockchain as a state machine whose execution is [[Resilience]][^1]. In this chapter, we will look at the evolution of these state machines, and see what applications have so far been encoded as such.
 
 This evolution can be categorized into two different eras, [[#Fixed State Machine]]
