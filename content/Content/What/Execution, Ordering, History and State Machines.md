@@ -86,19 +86,24 @@ y["$y$"] -->|"$F(x_2, y)$"| y1["$y_2$"] -->|"$F(x_1, y_2)$"| y2["$y_{21}$"]
 
 So far, we have used 3 models to demonstrate *what* blockchains actually achieve: 
 1. As an authority, discussed in [[Blockchain-based Authorities]]
-2. As a computer program with code and memory in [[Execution, Ordering and History Yields State Machine]]
-3. As a deterministic state machine in [[Execution, Ordering and History Yields State Machine]]
+2. As a computer program with code and memory in [[Execution, Ordering, History and State Machines]]
+3. As a deterministic state machine in [[Execution, Ordering, History and State Machines]]
 
 We can summarize the terminology for each of these 3 models, alongside a few more details as follows:
 
 ![[Blockchain Models]]
 
+## A Block
+
+We may proactively borrow one piece of terminology that will be later explained in [[Blockchains Are Overrated]]. We have not formally described what a *blockchain* even is, and what the word block therefore means. 
+
+At this point, it is safe to assume the following: 
+
+A blockchain STF often processes inputs not one by one, but rather as a group of inputs, and these groups are called a block. A block, in other words, is a block of transactions that are bundled together. 
+- $block = [tx_1, tx_2, tx_3]$
+- and then the STF's invocation would be: $F(block, y) \rightarrow y\prime$
+
+Also see [[Block and Header]].
 ## Summary
 
-TODO
-- Authorities have contentious state, and perform verifiable mutations on it. We can be pretty sure that this mutation was then correct.
-- This is very similar to a computer program with a memory. `f` is the code, `x` is the input, and `y`is the output memory after executing `f(x)`.
-- Imagine some computer program exists `f(x) -> y`. You and I need to establish trust on what Y is. You don't trust me to execute `f`, nor do I trust you to execute `f`. So, we either give `f` to an authority with human-based trust to execute it for us, or we give it to a blockchain like Ethereum to execute it for us. And we know that the execution in Ethereum is also correct. So this is "Verifiable execution of code". 
-- But what if there are two branches of history, which conflict with one another, but each are correct in their own branch? 
-- This is why verifiable execution is not enough, you also need to figure out the ordering, and from ordering you can derive the full history.  
-- All of this can be modeled as a"**State Machine**
+This chapter consolidated the 3 [[Blockchain Models]] mentioned above. With this model in mind, we can dive next into the [[Evolution of Blockchain State Machines]], and see what application logic has so far been encoded as a [[Resilience]] state machine. 

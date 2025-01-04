@@ -23,8 +23,9 @@ I admired Naval Ravikant's idea about how to *think clearly*, and in this writin
 
 Throughout this work, I try to establish a shared vocabulary, always backlink to it, and adhere to an *unbroken chain of logic* methodology.
 
-## Audience 
+TODO: word on conciseness, and my goal for this to be as short as possible. 
 
+## Audience 
 My main audience for this work are programmers and practitioners who already understand software engineering and digital systems and want to expand their understanding into Blockchains. Foremost, the best reader of this work is someone who has just started their career in Blockchain. Secondly, this work aims to be useful for decision makers who have had a glimpse at the potential of blockchains, and want to invent and innovate in this space, yet lack the deep understanding to see *the gaps*.
 
 > Four steps: choose a field, learn enough to get to the frontier, notice gaps, explore promising ones. This is how practically everyone who's done great work has done it, from painters to physicists.
@@ -33,9 +34,8 @@ My main audience for this work are programmers and practitioners who already und
 In some sense, I am creating the book that I *wish* I had access to at the year 2018, when I was finishing my Computer Science Msc. degree, and exploring a career in a blockchain company. 
 
 ## Polkadot? 
-
-While spent about 6 years working on Polkadot at the time of writing, I do not intend this writing to be particularly centered around Polkadot. The early chapters will purely be about general blockchains, and later chapters about scaling will cover Polkadot as one of the approaches. 
+While I spent about 6 years working on Polkadot at the time of writing, I do not intend this writing to be particularly centered around Polkadot. This is not a sale's pitch of Polkadot. The early chapters will purely be about general blockchains, and later chapters about scaling will cover Polkadot as one of the approaches. 
 
 Yet, I cannot deny that my understanding of blockchains has a Polkadot-oriented Bias: I learned all of this through the lens of Polkadot, so some degree of bias is unavoidable.
 
-That being said, I wholly believe that Polkadot is indeed a good blockchain to let influence our biases to a small degree as it is founded by one of main architects of the blockchain space, and the Ethereum cofounder Gavin Wood.
+That being said, I believe that Polkadot is indeed a good blockchain to let influence our biases to a small degree as it is founded by one of main architects of the blockchain space, the person who coined many of the principles I use in this book such as [[Web3]] and [[Resilience]], the Ethereum cofounder and Polkadot founder Gavin Wood. This gives me confident that such biases will all be towards keeping the blockchain space centered around its main value offering, creating [[Resilience]] systems and replacing elements of [[Trust#Human-based Trust]] with [[Trust#Science-based Trust]]. 

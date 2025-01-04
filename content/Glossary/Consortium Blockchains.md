@@ -1,0 +1,1 @@
+Blockchains that have a closed set of nodes that perform the above actions named in [[Consensus Algorithm]]. They inherit some, but not all of the [[Resilience]] of a blockchain systems. 

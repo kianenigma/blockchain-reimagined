@@ -13,13 +13,13 @@ Which is:
 - Conditional 
 - Corruptible 
 - Limited or Permissioned
-- Not easily auditable (discussed in [[Execution, Ordering and History Yields State Machine]])
+- Not easily auditable (discussed in [[Execution, Ordering, History and State Machines]])
 
 ## Science-based Trust
 Which is: 
 - Reliable
 - Verifiable
 - Accessible, Permissionless
-- Easily auditable (discussed in [[Execution, Ordering and History Yields State Machine]])
+- Easily auditable (discussed in [[Execution, Ordering, History and State Machines]])
 - This type of trust has [[Resilience]]. 
 
