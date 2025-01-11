@@ -1,0 +1,1 @@
+Ability for a group of [[Proof of Work]] [[Miners and Validators|Miners]] to come together and form a single more powerful miner. 

@@ -4,6 +4,10 @@ Description: Blockchain Reimagined Home
 tags:
 ---
 ## Table Of Content
+
+> [!warn] Draft
+> This writing should be considered a draft. 
+
 - [[Introduction]]
 - *What* blockchain networks can do
 	- [[What Is This All About?]]
