@@ -32,7 +32,8 @@ My main audience for this work are programmers and practitioners who already und
 > [Paul Graham, How to do great work](https://paulgraham.com/greatwork.html)
 
 In some sense, I am creating the book that I *wish* I had access to at the year 2018, when I was finishing my Computer Science Msc. degree, and exploring a career in a blockchain company. 
-
+## Goal
+Likely not up to date with all the latest tech trends out there, I admit. My hope is not to teach you all the lest in the micro level so you can invent "how to make an Rollup that does the exact same thing 3% faster", but to discover what the next (or perhaps the second best, after DeFi) proper use-case for this technology stack that we call crypto and blockchain is. 
 ## Polkadot? 
 While I spent about 6 years working on Polkadot at the time of writing, I do not intend this writing to be particularly centered around Polkadot. This is not a sale's pitch of Polkadot. The early chapters will purely be about general blockchains, and later chapters about scaling will cover Polkadot as one of the approaches. 
 

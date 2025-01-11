@@ -36,3 +36,4 @@ Let's recap what we have learned thus far about what blockchain networks are, an
 [[On and Off Ramp]]
 [[Oracle Problem]]
 [[The Free Internet]]
+Sybill resistance, no tx fee. 

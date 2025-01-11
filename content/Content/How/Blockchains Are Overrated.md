@@ -1,4 +1,4 @@
-We begin our description of *how* blockchains work with this cheeky title, as it conveys a very important message: What we have discussed so far, most notably in [[Blockchain-Reimagined/Content/What/Index|"What"]] elaborated on Blockchains as [[Resilience]] [[State Machine]], 3 of the most important properties of which are: 
+We begin our description of *how* blockchains work with this cheeky title, as it conveys a very important message: What we have discussed so far, most notably in all "*what blockchains are*" part, elaborated on Blockchains as [[Resilience]] [[State Machine]], 3 of the most important properties of which are: 
 1. Verifiable execution and audit-ability of history
 2. Correct ordering
 3. Accessibility
@@ -11,9 +11,9 @@ Specifically, blockchain only helps with verifying the ordering and audit-abilit
 
 Let's dive further into understanding *what* Blockchains actually are, and then revisit this proposition at the end.
 ## Blockchain
-Recall from [[Blockchain Models]] that transaction is synonym to a transition or mutation to the blockchain. Imagine we have a known correct order of 3 transactions. Without any special means, how can a new participant append a 4th one, while being able to prove the order of all the previous transactions? 
+Recall from [[Blockchain Models]] that transaction is synonym to a *transition* or *mutation* to the blockchain. Imagine we have a known correct order of 3 transactions. Without any special means, how can a new participant append a 4th one, while being able to prove the order of all the previous transactions? 
 
-Blockchain is an efficient means to solving this very problem, and not much more.
+Blockchain is an efficient means to solving this very problem.
 
 A blockchain proposes to: 
 - Bundle all transactions that are being added, in the right order, into a single ***block** of transactions*
@@ -35,16 +35,19 @@ graph LR
 
     Header1 --> Header2
 ```
+
 The main novelty of the above is the `Header` of each block, which contains
 - `current hash`: The **hash of the current block** of transactions
 - A **hash of the parent block**, on top of which this block is meant to be valid
 
-What the blockchain data structure achieves here is twofold: 
+Notice has `abc` is a hash of block $N-1$, and is referenced in block $N$ as the parent hash. Now also notice that the block $N-1$ itself is referencing a (not present in the picture) supposed parent block's hash, `xyz`. In effect, this means that the header hash of block $N$, namely `def`, is a digest (or attestation) of all not only what was in block $N-1$, but also all also $N-2$ all the way to the genesis. 
+
+So, what the blockchain data structure achieves here is twofold: 
 1. Assuming we have a large array of such blocks chained together, no previous block can be tampered with, **or else the chain of valid hashes will break**. This means no previous transaction can be added, removed, or modified
 	2. Any new block is committing to a specified parent, growing the blockchain only in one canonical chain.
-2. The hash of the header of the latest block contains a *digest* (via a [[Cryptographically Secured Hash]]) *of all the previous blocks as well*. This allows the blockchain to grow, without the need to always (re)hash all of the transactions. 
+2. The hash of the header of the latest block contains a *digest* (via a [[Cryptographically Secured Hash]]) *of all the previous blocks as well*. This allows the blockchain to grow, without the need to always (re)hash all of the previous transactions.
 ## Aside: Forks 
-Recall from [[Execution, Ordering, History and State Machines]] that a blockchain might have two mutations that both adhere to a **valid execution**, but eventually they are two parallel views of the state, and we need to resolve by choosing one. This situation is called a **[[Fork]]**. 
+Recall from [[Execution, Ordering, History and State Machines]] that a blockchain might have two mutations that both adhere to a **valid execution**, but nonetheless they are *two parallel views of the state, and we need to resolve by choosing one*. This situation is called a **[[Fork]]**.
 
 Blockchain systems must be able to eventually resolve forks by choosing one over the other, which is called the **Canonical Chain**. The rules of how forks are resolved is up to the [[Consensus Algorithm]] of the blockchain, and vary from implementation to implementation.
 
@@ -54,21 +57,21 @@ In summary, a blockchain, as a data-structure, is an **append-only list of trans
 
 It only provides the following: 
 
-> Given a recent block that is know to be part of the canonical chain, you can be share that all of the blocks that can be successfully linked back via the parent hash were also valid. 
-
-It is overrated, not? 
+> Given a recent block that is know to be part of the canonical chain, you can be sure that all of the blocks that can be successfully linked back via the parent hash were also valid. 
 
 ## Resilience
-The true learning here is that **blockchains are a means to an end**. The goal is to create [[Resilience]] systems, or perhaps a [[Resilience]] web that we call [[Web3]]. Blockchain, as a data-structure contributed to this goal by giving us a system that allows the history to be audited in an efficient way. 
+The true learning here is that **blockchains are a means to an end**. The goal is to create [[Resilience]] state machines, capable of doing computation with properties of [[Trust#Science-based Trust]]. Blockchain, as a data-structure *contributes* to this goal by giving us a system that allows the history to be audited in an efficient way. 
 
-What is far more interesting to learn is how we can ensure the other aspects of [[Resilience]], such as verifiably and reliable execution. 
+What is far more interesting to learn is how we can ensure the other aspects of [[Resilience]], such as **verifiably and reliable execution**. 
 
-Next, in [[Proof of Work]] and [[Proof of Stake]] we learn how different [[Consensus Algorithm]] achieve this. 
+Next, in [[Proof of Work]] and [[Proof of Stake]] we learn how different [[Consensus Algorithm]] achieve this.
 
 Notes: 
 
-- Verifiable, reliable execution: economic incentive
+- Verifiable, reliable execution: economic incentive. This is how the role of 
 	- POW: if you diverge, but more than 2/3 of the network are not, you are merely wasting money, so you won't do it. Works, but it is wasteful
 	- POS: capital at risk of being slashed. Economic security
-- Auditability of history: Use of the [[Blockchains Are Overrated]] data-structure. 
 - Accessibility and Permissionless: subjective measures. Allow anyone meeting some reasonable bar to become an author. Disincentivize any censorship
+- author selection:
+	- POW anyone, proportional to hash power
+	- POS the set of nodes with the most amount at stake

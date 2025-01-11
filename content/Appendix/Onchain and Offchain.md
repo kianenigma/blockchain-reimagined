@@ -1,0 +1,1 @@
+Not sure how where to introduce it, probably in [[Execution, Ordering, History and State Machines]], but important concept to grasp. 
