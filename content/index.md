@@ -11,24 +11,20 @@ tags:
 	- [[Execution, Ordering, History and State Machines]]
 	- [[Evolution of Blockchain State Machines]]
 	- [[Blockchain Networks]]
-	-  [[Value Offering]] as a clear thinker
 - *How* blockchain networks do it
 	- [[Blockchains Are Overrated]]
 	- [[Proof of Work]]
 	- [[Proof of Stake]]
 - *How to scale* a blockchain network 
-	- A Word on Synchrony 
-	- Hyper Optimized Single Chain
-		- Scaling Up
-	- Sharding
-		- Execution
-		- Data Availability
-		- Security 
-	- Multichain
-		- Cosmos
-		- Shared Security
-		- Optimistic
-		- SNARK
-- Polkadot
-- JAM 
-	- A new way of sharding
+	- [[What Scaling Blockchains Means]]
+	- [[Scaling Up - Hyper Optimized Super Chains]]
+	- [[Scaling Out - Introduction]]
+	- [[Scaling Out - Pure Multi-chain]]
+	- [[Scaling Out - Shared Economic Security]]
+	- [[Scaling Out - Optimistic]]
+	- [[Scaling Out - SNARKs]]
+- Polkadot:
+	- [[Polkadot]]
+	- [[JAM]]
+- Conclusion
+	-  [[Value Offering]] as a clear thinker
