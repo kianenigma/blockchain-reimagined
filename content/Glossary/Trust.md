@@ -16,5 +16,6 @@ Which is:
 - Verifiable
 - Accessible, Permissionless
 - Easily auditable (discussed in [[Execution, Ordering, History and State Machines]])
-- This type of trust has [[Resilience]]. 
+
+This type of trust has [[Resilience]]. 
 

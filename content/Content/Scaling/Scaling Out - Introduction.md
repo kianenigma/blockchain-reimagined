@@ -1,0 +1,1 @@
+Why scaling matters? entropy. We don't know what yet to build on blockchain silicon. It takes time and experimentation to do so. If blockchains become cheap as fuck, but remain as secure, we will have a higher chance of finding this

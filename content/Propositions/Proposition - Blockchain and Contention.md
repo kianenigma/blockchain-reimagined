@@ -1,0 +1,3 @@
+Blockchains are best fit for an environment where there is contentious data. Of an overall system, it is best to implement the value-bearing contentious part of it using a blockchain.
+
+A good analogy is to see the blockchain as a TEE. It can securely execute some code, and reflect the outcome on its state. Which parts of an application are best fitted to be executed on a TEE? some, but certainly not all.
